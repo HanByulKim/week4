@@ -1,0 +1,18 @@
+irb
+d
+"dafs"
+Post.create(writer: "khb", content : "hello world")
+Post.create(writer: "khb", content: "hello world")
+Post.new
+Post.all
+Post.create(writer: "khb", content: "hello")
+Post.create(writer: "lhj", content: "fuck you")
+Post.create(writer: "jhj", content: "damn")
+Post.create(writer: "johnson", content: "bitch")
+pp="Post.find(1)
+damn?
+"
+pp = Post.find(1)
+pp
+Post.find(1)
+exit

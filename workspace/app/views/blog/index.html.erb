@@ -1,0 +1,15 @@
+<h1>Hello, Simple/</h1>
+
+<form action="/blog/create">
+    
+<input type="text" name="irum" placeholder="writer"> <br>
+<textarea name="naeyong" placeholder="content"></textarea><br>
+<input type="submit">
+</form>
+<% @posts.each do |p| %>
+ <li><%=p.writer%> : <pre> <%=p.content%> </pre>
+ <p><%=p.updated_at%></p>
+   <a href="/blog/destroy?id=<%=p.id%>">삭제</a>
+   <a href="/blog/edit?id=<%=p.id%>">수정</a>
+ </li>
+<% end %>
